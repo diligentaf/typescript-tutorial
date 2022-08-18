@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import InputField from './components/InputField';
+/* eslint-disable  @typescript-eslint/no-unused-vars */
 
 let name: string;
 name = '5';
@@ -72,10 +74,12 @@ let car: Car = {
 console.log(car);
 
 // function App() {
-const App = () => {
+// const App: React.ReactNode = () => {
+const App: React.FC = () => {
   return (
     <div className="App">
-      {name}
+      <span className="heading">Taskify</span>
+      <InputField />
     </div>
   );
 }
